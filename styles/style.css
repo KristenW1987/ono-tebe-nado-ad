@@ -1,34 +1,98 @@
-/* место для вашего кода */
-.content_header {
-
+.cover{
+    box-sizing:border-box;
+    width: 100%;
+    height: 757px;
+    margin-top: 0px;
+    margin-bottom: 180px;
+    background-image: url(/ono-tebe-nado-ad/images/cover.jpg);
+}
+.content_section{
+    background-color: #f5f5f5;
 }
 .header{
     /* border значит с отступы уже внутри */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-sizing:border-box;
     width: 100%;
     height: 293px;
     margin:auto;
     /* margin это внешний отступ от элементов */
 }
+.header_logo{
+    display: block;
+    justify-content: center;
+    width: 148px;
+    height: 105px;
+}
+/* на всякий */
+.header_logo-image{
+    width: 100%;
+}
 
+.header_menu-list{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    list-style: none;
+}
+.header_menu-link{
+    color: #000000;
+    font-size: 18px;
+    line-height: 100%;
+}
+.header_menu-item_active .header_menu-link{
+    text-decoration: none;
+}
+.contact-info{
+    width: 240px;
+    height: 98px;
+}
+
+/* main */
 .cover{
     box-sizing:border-box;
     width: 100%;
     height: 757px;
-    margin:auto;
+    margin-top: 0px;
+    margin-bottom: 180px;
+    background-image: url(/ono-tebe-nado-ad/images/cover.jpg);
+}
+.cover_title{
+    width: 100%;
+    color: #000000;
+    font-family: "Raleway", bold;
+    font-weight: 700;
+    font-size: 100px;
+}
+
+.accent-span {
+    display: block;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
 }
 .lots{
     margin:24px ;
     box-sizing:border-box;
     width: 1052px;
     height: 723px;
+    margin-top: 0px;
+    margin-bottom: 120px;
 }
 
 .about{
     box-sizing:border-box;
     width: 1052px;
     height: 595px;
-    margin:auto;
+    margin-top: 0px;
+    margin-bottom: 180px;
 }
 
 .footer{

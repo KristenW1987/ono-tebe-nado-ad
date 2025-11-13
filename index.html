@@ -10,13 +10,43 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header content_header">
-      <!-- логотип надо подумать -->
-      <!-- <div class>-->
-      <!-- </div>-->
+    <header class="header content_section">
+      <!-- должен быть в центре -->
+       <nav class="header_menu"><!-- МЕНЮ ДОБАВИТЬ КЛАССЫ-->
+        <ul class="header_menu-list">
+          <li class="header_menu-item header_menu-item_active">
+            <a class="header_menu-link">Главная</a>
+          </li>
+          <li class="header_menu-item">
+            <a class="header_menu-link" href="#0">Посмотреть лоты</a>
+          </li>
+          <li class="header_menu-item">
+            <a class="header_menu-link" href="#0">Об аукционе</a>
+          </li>
+        </ul>
+       </nav> 
+      <a class="header_logo">
+        <img class="header_logo header_logo-image" src="./images/logo-black.svg"
+        alt="Логотип проекта" />
+      </a>
+      <div class="contact-info">
+            <div class="phone">+9 999 555 5555</div>
+            <!--сделать линию -->
+            <a href="mailto:info@sobaka.ge" class="email">info@sobaka.ge</a>
+            <div class="address">наб. Принсенграхт 263-265. Амстердам</div>
+        </div>
     </header>
-    <main>
-      <section class="cover">
+
+    <main class="content">
+      <section class="cover content_section">
+        <h1 class="cover_title">
+          <span class="accent-span">ОНО</span>
+          <span class="accent-span text-center">ТЕБЕ</span>
+          <span class="accent-span text-right">НАДО</span>
+        </h1>
+        <div class="description">
+
+        </div>
       </section>
       <section class="lots">
       </section>
