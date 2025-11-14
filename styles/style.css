@@ -170,7 +170,7 @@ html {
   color: #ffffff;
 }
 .name {
-  padding-bottom: 26px;
+  padding-bottom: 21px;
   padding-left: 40px;
   padding-top: 160px;
   color: #000;
@@ -256,7 +256,7 @@ html {
 }
 
 .about {
-  padding-top: 94px;
+  padding-top: 100px;
 }
 
 .about_container {
@@ -294,7 +294,7 @@ html {
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
 .about_text {
@@ -320,7 +320,7 @@ html {
   padding-top: 180px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 135px;
+  padding-bottom: 120px;
   gap: 140px;
   align-items: flex-start;
 }
