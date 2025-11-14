@@ -6,15 +6,13 @@ html {
 }
 
 .header {
-  /* border значит с отступы уже внутри */
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  box-sizing: border-box;
-  width: 100%;
-  height: 293px;
-  margin: auto;
-  /* margin это внешний отступ от элементов */
+  padding-top: 92px;
+  padding-left: 24px;
+  padding-bottom: 92px;
+  padding-right: 24px;
 }
 .header_logo {
   display: block;
@@ -22,32 +20,30 @@ html {
   width: 148px;
   height: 105px;
 }
-/* на всякий */
-.header_logo-image {
-  width: 100%;
-}
 .header_menu {
-  width: 392px;
-  height: 22px;
-}
-.header_menu-item {
-  list-style: circle;
+  display: flex;
+  justify-self: center;
 }
 
-.header_menu-list {
-  list-style: circle;
+.menu_links {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 32px;
+  list-style-type: circle;
+  padding-right: 7px;
 }
-.header_menu-link {
-  color: #000000;
+
+.link_list {
   font-size: 18px;
-  line-height: 100%;
+  font-weight: 400;
+  text-underline-offset: 4px;
 }
-.header_menu-item_active .header_menu-link {
+
+.main_link_marker {
+  list-style-type: none;
+}
+
+.link_main {
   text-decoration: none;
-  list-style: none;
 }
 .contact-info {
   width: 240px;
@@ -79,6 +75,7 @@ html {
   font-family: "Raleway", bold;
   padding: 50px; /* добавляет отступы */
   box-sizing: border-box;
+  margin-bottom: 156px;
 }
 .overlay-parent {
   position: relative; /* обязательно для позиционирования оверлея */
@@ -163,17 +160,13 @@ html {
   box-sizing: border-box;
   width: 1052px;
   height: 723px;
-  margin-top: 180px;
-  margin-bottom: 180px;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   position: relative;
   z-index: 1;
   color: #ffffff;
 }
 .name {
-  padding-top: 60px;
   padding-bottom: 26px;
   padding-left: 64px;
   color: #000;
@@ -319,7 +312,10 @@ html {
 .footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  padding: 180px 50px 88px;
+  padding-top: 180px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 82px;
   gap: 140px;
   align-items: flex-start;
 }
