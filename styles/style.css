@@ -75,7 +75,6 @@ html {
   font-family: "Raleway", bold;
   padding: 50px; /* добавляет отступы */
   box-sizing: border-box;
-  margin-bottom: 130px;
   padding-top: 4px;
 }
 .overlay-parent {
@@ -170,6 +169,7 @@ html {
 .name {
   padding-bottom: 26px;
   padding-left: 40px;
+  padding-top: 156px;
   color: #000;
   font-size: 40px;
   font-weight: 700;
