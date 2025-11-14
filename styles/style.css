@@ -103,17 +103,11 @@ html {
   font-size: 100px;
   letter-spacing: 30px;
   z-index: 2;
-
-  display: flex;
-  flex-direction: column;
-  padding: 165px 50px 147px;
-  gap: 20px;
+  padding-top: 20px;
 }
 
 .accent-span {
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 100%;
+  display: block;
   letter-spacing: 30px;
 }
 
@@ -127,7 +121,6 @@ html {
   text-align: right;
   letter-spacing: 25px;
   padding-top: 40px;
-  align-self: flex-end;
 }
 
 .cover_description {
