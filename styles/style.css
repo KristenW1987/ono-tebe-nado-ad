@@ -39,7 +39,6 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  list-style: none;
 }
 .header_menu-link {
   color: #000000;
@@ -53,6 +52,15 @@ html {
 .contact-info {
   width: 240px;
   height: 98px;
+}
+.address {
+  padding-left: 185px;
+  font-size: 18px;
+  line-height: 24.3px;
+  letter-spacing: 0.18px;
+  font-family: "Raleway", sans-serif;
+  list-style-type: none;
+  font-style: normal;
 }
 .phone {
   text-decoration: none;

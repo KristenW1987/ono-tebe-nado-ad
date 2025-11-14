@@ -11,9 +11,7 @@
   </head>
   <body>
     <header class="header content_section">
-      <!-- должен быть в центре -->
       <nav class="header_menu">
-        <!-- МЕНЮ ДОБАВИТЬ КЛАССЫ-->
         <ul class="header_menu-list">
           <li class="header_menu-item_active">
             <a class="header_menu-link">Главная</a>
@@ -33,14 +31,23 @@
           alt="Логотип проекта"
         />
       </a>
-      <div class="contact-info">
-        <a href="tel:+70000000" class="phone">+9 999 555 5555</a><br />
-        <!--сделать линию -->
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <div class="address">наб. Принсенграхт 263-265. Амстердам</div>
-      </div>
+      <address>
+        <ul class="address">
+          <li>
+            <!--удалил класс и сделал общий для стилизации -->
+            <a href="tel.+99995555555" class="phone">+9 999 555 5555</a>
+          </li>
+          <li>
+            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          </li>
+          <li>
+            <!-- удалил класс -->
+            наб. Принсенграхт 263-<br />
+            265, Амстердам
+          </li>
+        </ul>
+      </address>
     </header>
-    <!--надо вернуться -->
     <main class="content">
       <section class="cover overlay-parent">
         <h1 class="cover_title">
@@ -72,7 +79,6 @@
           </a>
           <a href="#0" class="card-link">
             <li class="card_about_book overlay-parent">
-              <!-- и я хуй знает что делать с этой Д-->
               <div class="article-text article-text-top">
                 Книга, где описан один скучный день из жизни рекламного агента
               </div>
@@ -154,13 +160,10 @@
           <li>
             <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           </li>
-          <li class="header__address">
-            наб. Принсенграхт 263-265,<br />
-            Амстердам
-          </li>
+          <li class="header__address">наб. Принсенграхт 263-265, Амстердам</li>
         </ul>
       </address>
-      <nav class="footer_menu">
+      <nav class="contact-info">
         <ul class="footer_menu_links">
           <li class="footer_links">
             <a href="#" class="footer_links footer_main"> главная </a>
