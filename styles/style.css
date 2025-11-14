@@ -1,110 +1,140 @@
+html {
+  scroll-behavior: smooth;
+}
 .content_section {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
-.overlay {
-    width: 100%;
-    min-height: 100%;
-    color: rgb(95 13 238 / 0.5);
-}
 .header {
-    /* border значит с отступы уже внутри */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing:border-box;
-    width: 100%;
-    height: 293px;
-    margin:auto;
-    /* margin это внешний отступ от элементов */
+  /* border значит с отступы уже внутри */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 293px;
+  margin: auto;
+  /* margin это внешний отступ от элементов */
 }
 .header_logo {
-    display: block;
-    justify-content: center;
-    width: 148px;
-    height: 105px;
+  display: block;
+  justify-content: center;
+  width: 148px;
+  height: 105px;
 }
 /* на всякий */
-.header_logo-image{
-    width: 100%;
+.header_logo-image {
+  width: 100%;
+}
+.header_menu {
+  width: 392px;
+  height: 22px;
+}
+.header_menu-item {
+  list-style: circle;
 }
 
-.header_menu-list{
-    display: flex;
-    flex-direction: row;
-    gap: 13px;
-    list-style: none;
+.header_menu-list {
+  list-style: circle;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
 }
-.header_menu-link{
-    color: #000000;
-    font-size: 18px;
-    line-height: 100%;
+.header_menu-link {
+  color: #000000;
+  font-size: 18px;
+  line-height: 100%;
 }
-.header_menu-item_active .header_menu-link{
-    text-decoration: none;
+.header_menu-item_active .header_menu-link {
+  text-decoration: none;
+  list-style: none;
 }
-.contact-info{
-    width: 240px;
-    height: 98px;
+.contact-info {
+  width: 240px;
+  height: 98px;
 }
-
+.phone {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
 /* main */
 .cover {
-    width: 100%;
-    min-height: 757px; /* лучше использовать min-height */
-    background-image: url('../images/cover.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    font-family: "Raleway", bold;
-    padding: 50px; /* добавляет отступы */
-    box-sizing: border-box;
+  width: 100%;
+  min-height: 757px; /* лучше использовать min-height */
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", bold;
+  padding: 50px; /* добавляет отступы */
+  box-sizing: border-box;
+}
+.overlay-parent {
+  position: relative; /* обязательно для позиционирования оверлея */
 }
 
-.cover_title{
-    width: 100%;
-    color: #ffffff;
-    font-family: "Raleway", bold;
-    font-weight: 700;
-    font-size: 100px;
-    letter-spacing: 30px;
+.overlay-parent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.cover_title {
+  width: 100%;
+  margin-top: auto;
+  color: #ffffff;
+  font-family: "Raleway", bold;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: 30px;
+  z-index: 2;
 }
 
 .accent-span {
-    display: block;
-    letter-spacing: 30px;
+  display: block;
+  letter-spacing: 30px;
 }
 
-.text-center{
-    text-align: center;
-    letter-spacing: 30px;
+.text-center {
+  text-align: center;
+  letter-spacing: 30px;
 }
 
-.text-right{
-    text-align: right;
-    letter-spacing: 30px;
+.text-right {
+  text-align: right;
+  letter-spacing: 25px;
+  padding-top: 10px;
 }
 
 .cover_description {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    margin-top: auto;  
-    justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
-.cover_description-text{
-    display: flex;
-    align-items: center;
-    width: 637px;
-    color: #ffffff;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    word-spacing: 18px;
-    text-transform: uppercase;
-    line-height: 28px;
+.cover_description-text {
+  display: flex;
+  align-items: center;
+  width: 637px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  word-spacing: 18px;
+  text-transform: uppercase;
+  line-height: 28px;
 }
 .button {
   background: transparent;
@@ -117,26 +147,207 @@
   cursor: pointer;
 }
 
-.lots{
-    margin:24px ;
-    box-sizing:border-box;
-    width: 1052px;
-    height: 723px;
-    margin-top: 0px;
-    margin-bottom: 120px;
+.card-link {
+  text-decoration: none;
+}
+.lots {
+  margin: 24px;
+  box-sizing: border-box;
+  width: 1052px;
+  height: 723px;
+  margin-top: 180px;
+  margin-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
+.name {
+  padding-top: 60px;
+  padding-bottom: 26px;
+  padding-left: 64px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.about{
-    box-sizing:border-box;
-    width: 1052px;
-    height: 595px;
-    margin-top: 0px;
-    margin-bottom: 180px;
+.lots-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(334px, 1fr));
+  gap: 25px;
+  padding: 10px 0;
+}
+.card_about_cinema,
+.card_about_book,
+.card_about_picture {
+  width: 100%; /* Занимает всю ширину ячейки */
+  height: 596px;
+  background-size: cover;
+  background-position: center;
+}
+.article-text {
+  position: relative;
+  z-index: 2;
+}
+.article-text-top {
+  text-transform: uppercase;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: underline;
+  flex: 1; /* Занимает всё оставшееся пространство */
+  min-height: 0;
+}
+.article-text-bottom {
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 20px;
+}
+.card_about_cinema {
+  width: 334px;
+  height: 596px;
+  background-image: url("../images/card-lot-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.card_about_book {
+  width: 334px;
+  height: 596px;
+  background-image: url("../images/card-lot-02.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.card_about_picture {
+  width: 334px;
+  height: 596px;
+  background-image: url("../images/card-lot-03.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.view_more {
+  display: block;
+  text-underline-offset: 3px;
+  padding-top: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+  margin-left: 64px;
 }
 
-.footer{
-    box-sizing:border-box;
-    width: 100%;
-    height: 180px;
-    margin:auto;
+.about {
+  margin-top: 120px;
+}
+
+.about_container {
+  display: grid;
+  grid-template-columns: 334px repeat(1, 1fr);
+  gap: 25px;
+  padding: 34px 24px 0px;
+}
+
+.about_logo {
+  justify-self: center;
+  background-color: #000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_logo_image {
+  width: 148px;
+  height: 114px;
+}
+
+.about_content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 100px;
+}
+
+.title_about {
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+}
+
+.about_text {
+  align-self: flex-start;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.text_up {
+  padding-top: 76px;
+}
+
+.text_down {
+  padding-top: 25px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 180px 50px 88px;
+  gap: 140px;
+  align-items: flex-start;
+}
+
+.footer_address {
+  font-style: normal;
+  padding-left: 0px;
+}
+
+.footer_menu {
+  padding-left: 35px;
+}
+
+.footer_menu_links {
+  list-style-type: none;
+  text-underline-offset: 3px;
+}
+
+.footer_links {
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer_main {
+  text-decoration: none;
+}
+
+.images_footer {
+  width: 48px;
+  height: 48px;
+}
+
+.footer_images {
+  display: flex;
+  gap: 48px;
 }
