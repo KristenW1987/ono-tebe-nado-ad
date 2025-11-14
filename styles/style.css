@@ -159,7 +159,7 @@ html {
   margin: 24px;
   box-sizing: border-box;
   width: 1052px;
-  height: 723px;
+  height: auto;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -169,7 +169,7 @@ html {
 .name {
   padding-bottom: 26px;
   padding-left: 40px;
-  padding-top: 156px;
+  padding-top: 160px;
   color: #000;
   font-size: 40px;
   font-weight: 700;
@@ -253,7 +253,7 @@ html {
 }
 
 .about {
-  margin-top: 120px;
+  padding-top: 96px;
 }
 
 .about_container {
