@@ -75,7 +75,8 @@ html {
   font-family: "Raleway", bold;
   padding: 50px; /* добавляет отступы */
   box-sizing: border-box;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
+  padding-top: 4px;
 }
 .overlay-parent {
   position: relative; /* обязательно для позиционирования оверлея */
@@ -315,7 +316,6 @@ html {
   padding-top: 180px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 82px;
   gap: 140px;
   align-items: flex-start;
 }
